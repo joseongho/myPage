@@ -8,37 +8,41 @@
 	border-radius: 10px;
 }
 
-#sideBar {
-	width: 20%;
-	float: left;
+#navigation {
 	border: solid;
 	border-radius: 10px;
-	position: fixed;
+	margin-bottom: 10px;
+	position: sticky;
+	top: 0;
+	background-color: white;
 }
 
-#sideBar>ul {
+#navigation>ul {
 	list-style: none;
 }
 
-#sideBar>ul>li>a {
+#navigation>ul>li {
+	float: left;
+	display: contents;
+}
+
+#navigation>ul>li>a {
 	text-decoration: none;
 	padding-left: 10px;
 	padding-right: 10px;
 	color: black;
 }
 
-#sideBar>ul>li>a:hover {
+#navigation>ul>li>a:hover {
 	background-color: gray;
 	cursor: pointer;
 }
 
-#sideBar>ul>li>a:visited {
+#navigation>ul>li>a:visited {
 	color: black;
 }
 
 #article {
-	margin-left: 25%;
-	width: 70%;
 	border: solid;
 	border-radius: 10px
 }
@@ -49,9 +53,7 @@
 }
 
 #footer {
-	margin-left: 25%;
 	margin-top: 10px;
 	border: solid;
 	border-radius: 10px;
-	width: 70%;
 }
