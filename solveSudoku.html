@@ -1,11 +1,292 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="EUC-KR">
-<title>Insert title here</title>
-</head>
-<body>
 
-	<script type="text/javascript" src="solveSudokuJS.js"></script>
+<head>
+    <meta charset="EUC-KR">
+    <title>Insert title here</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n0">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n1">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n2">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n3">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n4">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n5">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n6">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n7">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n8">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n9">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n10">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n11">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n12">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n13">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n14">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n15">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n16">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n17">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n18">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n19">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n20">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n21">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n22">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n23">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n24">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n25">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n26">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n27">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n28">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n29">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n30">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n31">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n32">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n33">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n34">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n35">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n36">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n37">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n38">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n39">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n40">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n41">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n42">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n43">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n44">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n45">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n46">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n47">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n48">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n49">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n50">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n51">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n52">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n53">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n54">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n55">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n56">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n57">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n58">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n59">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n60">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n61">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n62">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n63">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n64">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n65">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n66">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n67">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n68">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n69">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n70">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n71">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n72">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n73">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n74">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n75">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n76">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n77">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n78">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n79">
+            </td>
+            <td>
+                <input type="number" min="0" max="9" value="0" name="n80">
+            </td>
+        </tr>
+    </table>
+    <input type="button" onclick="solve()">
+    <script type="text/javascript" src="solveSudokuJS.js">
+        function solve() {
+            var test = [];
+            for (var i = 0; i < 81; i++) {
+                test.push(sudokuDate);
+                test[i].answer = document.getElementsByName("n" + i).values;
+            }
+            console.log(test.length);
+        }
+
+        var sudokuDate = {
+            answer: "",
+            banNumber: ""
+
+        }
+    </script>
 </body>
+
 </html>
