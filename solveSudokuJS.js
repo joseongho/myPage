@@ -7,7 +7,7 @@ function solve() {
         test.push(sudokuDate);
         test[i].answer = document.getElementsByName("n" + i).values;
     }
-    console.log(test.length);
+    console.log(test[0].answer);
 }
 
 var sudokuDate = {
