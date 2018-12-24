@@ -44,6 +44,11 @@
 	border: none;
 }
 
+#article>iframe>iframe {
+	width: 100%;
+	border: none;
+}
+
 #footer {
 	margin-top: 10px;
 	border: solid;
