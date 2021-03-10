@@ -63,6 +63,39 @@
 					</li>
 				</ul>
 			</p>
+			<hr>
+			<h3>가제 : 파일 암호화 전송</h3>
+			<ol>작업 진행 순서
+				<li>서버에서 파일 암호화</li>
+				<li>클라이언트에 전송</li>
+				<li>클라이언트에서 복호화후 삭제</li>
+			</ol>
+			<pre>
+pseudocode
+
+10bit inputData[n], contentToTranslate[];
+
+while ( i=0; i < n; i++ ) {
+	xor( inputData[i], contentToTranslate[] ){
+		while ( j=0; j<10; j++){
+			case
+				inputData[i].j==0 && contentToTranslate[i].j==0
+				save(0)
+				break
+				inputData[i].j==1 && contentToTranslate[i].j==0
+				save(1)
+				break
+				inputData[i].j==0 && contentToTranslate[i].j==1
+				save(1)
+				break
+				inputData[i].j==1 && contentToTranslate[i].j==1
+				save(0)
+				break
+		}
+	}
+}
+			</pre>
+			<p>과제 : 최선 수행결과, 최악 수행결과 차이를 크게</p>
 		</div>
 		<div id="footer">
 			<h3>자기소계</h3>
