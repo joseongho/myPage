@@ -73,29 +73,31 @@
 			<pre>
 pseudocode
 
-10bit inputData[n], contentToTranslate[];
+10bit inputData[n], contentToTranslate[m];
 
 while ( i=0; i < n; i++ ) {
-	xor( inputData[i], contentToTranslate[] ){
-		while ( j=0; j<10; j++){
-			case
-				inputData[i].j==0 && contentToTranslate[i].j==0
-				save(0)
-				break
-				inputData[i].j==1 && contentToTranslate[i].j==0
-				save(1)
-				break
-				inputData[i].j==0 && contentToTranslate[i].j==1
-				save(1)
-				break
-				inputData[i].j==1 && contentToTranslate[i].j==1
-				save(0)
-				break
+	while ( j=0; j < m; j++ ) {
+		xor( inputData[i], contentToTranslate[] ){
+			while ( k=0; k<10; k++){
+				case
+					inputData[i].k==0 && contentToTranslate[m].k==0
+						save(0)
+						break
+					inputData[i].k==1 && contentToTranslate[m].k==0
+						save(1)
+						break
+					inputData[i].k==0 && contentToTranslate[m].k==1
+						save(1)
+						break
+					inputData[i].k==1 && contentToTranslate[m].k==1
+						save(0)
+						break
+			}	
 		}
 	}
 }
 			</pre>
-			<p>과제 : 최선 수행결과, 최악 수행결과 차이를 크게</p>
+			<p>과제 : </p>
 		</div>
 		<div id="footer">
 			<h3>자기소계</h3>
