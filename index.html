@@ -79,17 +79,17 @@ while ( i=0; i < n; i++ ) {
 	while ( j=0; j < m; j++ ) {
 		xor( inputData[i], contentToTranslate[] ){
 			while ( k=0; k<10; k++){
-				case
-					inputData[i].k==0 && contentToTranslate[m].k==0
+				switch	
+					case	inputData[i].k==0 && contentToTranslate[m].k==0
 						save(0)
 						break
-					inputData[i].k==1 && contentToTranslate[m].k==0
+					case	inputData[i].k==1 && contentToTranslate[m].k==0
 						save(1)
 						break
-					inputData[i].k==0 && contentToTranslate[m].k==1
+					case	inputData[i].k==0 && contentToTranslate[m].k==1
 						save(1)
 						break
-					inputData[i].k==1 && contentToTranslate[m].k==1
+					case	inputData[i].k==1 && contentToTranslate[m].k==1
 						save(0)
 						break
 			}	
@@ -98,6 +98,11 @@ while ( i=0; i < n; i++ ) {
 }
 			</pre>
 			<p>과제 : 클라이언트에서 서버로 전송할 gui, 업로드 서버 구성, 다양한 방식의 암호화 알고리즘</p>
+			<p>단점 : c언어를 윈도우에서 실행시키기 까다로움</p>
+			<hr>
+			<p>
+				웹 어플리케이션 : c, html, httpd, sql(?)	
+			</p>
 		</div>
 		<div id="footer">
 			<h3>자기소계</h3>
